@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>荣昌监管系统</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./static/lib/lulu-ui/ui/LightTip.css">
+	<link rel="stylesheet" type="text/css" href="./static/utils/my-check-input/my-check-input.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/fullIn.css">
+</head>
+<body>
+
+	<div id="tmpHeader" class="tmp-header"></div>
+
+	<div id="tmpNav" class="tmp-nav is-shrink"></div>
+
+	<div class="tmp-main">
+
+		<div class="container fullIn-box">
+			<div class="header clear">
+				<a class="home-btn" href="#">返回集成页</a>
+				<p>当前机构：<span class="now-organ"></span></p>
+			</div>
+
+			<div class="form-box">
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">数据日期</div>
+							</div>
+							<select id="year"></select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">编制人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="bzrs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">期末在编人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="qmzbrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">借出人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="jcrs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">借入人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="jrrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">期末在编在职人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="qmzbzzrs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">临时工人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="lsgrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">临时卫技人员</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="lswjry">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">期末离退休人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="qmltxrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">平均离退休人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="pjltxrs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">编制床位</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="bzcw">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">医师总数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="yszs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医类别医师</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zylbys">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">全科医师总数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="qkyszs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医类别全科医师数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zylbqkyss">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医药技术方法（种）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyyjsff">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医诊疗设备</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyzlsb">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医药适宜技术</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyysyjs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年内辖区内高血压患者总人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="nnxqngxyhzzrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">高血压（应管理）人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="gxyyglrs">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">精神病（应管理）人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="jsbyglrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">新生儿（应管理）人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="xseyglrs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年内辖区内65岁及以上常住居民数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="nnxqn65sjysczjms">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年内辖区内糖尿病患者总人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="nnxqntnbhzzrs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">辖区内15岁及以上人口总数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="xqn15sjysrkzs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">肺结核追踪管理数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="fjhzzgls">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年度辖区内活产数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="ndxqnhcs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年度辖区内应管理的0～6岁儿童数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="ndxqnygld06sets">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">该地该时间段内活产数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="gdgsjdnhcs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年度辖区内应建立预防接种证人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="ndxqnyjlyfjzzrs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">某种疫苗年度应接种人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="mzymndyjzrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">孕产妇应管理人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="ycfyglrs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">年度辖区内的0～36个月儿童数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="ndxqnd036gyets">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">辖区人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="xqrs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">糖尿病（应管理）人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="tnbyglrs">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="btn-box">
+					<button id="clear">取消</button>
+					<button class="submit" id="submit">提交</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+		
+	<script data-main="./static/js/config" data-page="wsy" src="./static/lib/require.js"></script>
+</body>
+</html>

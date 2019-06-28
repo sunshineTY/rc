@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>荣昌监管系统</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./static/utils/my-check-input/my-check-input.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/login.css">
+</head>
+<body>
+
+	<div class="min-wrapper login-box">
+		<div class="min-scroll">
+			<img class="bg-img" src="./static/img/login/bg.jpg">
+			
+			<div class="content clear">
+				<div class="logo-box">
+					<img class="logo" src="./static/img/login/u2.png">
+					<p class="p1">荣昌基层一体化集成应用与监管平台</p>
+                	<p class="p2">RongChang Grass-roots Integrated Application and Supervision Platform</p>
+				</div>
+				<div class="login-main-box">
+					<div class="title">荣昌监管系统登录</div>
+					
+					<div class="box">
+
+
+						<div class="my-check-input rc-check-box">
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="name" placeholder="请输入姓名">
+							</div>
+						</div>
+
+						<div class="my-check-input rc-check-box">
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="password" class="full-in-ipt" id="pwd" placeholder="请输入密码">
+							</div>
+						</div>
+
+						<div class="my-check-input rc-check-box">
+							<div class="input-box clear">
+								<p class="tip"></p>
+								<input type="password" class="full-in-ipt code-ipt" id="code" placeholder="请输入验证码">
+								<canvas class="yzm-img to-right" id="codeCv">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+							</div>
+						</div>
+
+						<div class="row1 clear">
+							<label class="to-left"><input type="checkbox"/>记住登录账户</label>
+							<a class="to-right" href="javascript:;">忘记密码？</a>
+						</div>
+
+						<div class="row2">
+							<button class="submit-btn my-btn">登录</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="login-footer">
+				<div class="jump">
+	                <a href="#">用户反馈</a>
+	                <a href="#">帮助</a>
+	                <a href="#">关于我们</a>
+	            </div>
+	            <p class="record">Copyright © 2019 - 2022, RCJC.com All rights reserved 重庆市荣昌区卫计委版权所有 ICP备案：渝1564538987762号</p>
+			</div>
+		</div>
+	</div>
+
+	<script data-main="./static/js/config" data-page="login" src="./static/lib/require.js"></script>
+</body>
+</html>

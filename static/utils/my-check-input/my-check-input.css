@@ -1,0 +1,65 @@
+.my-check-input {
+	position: relative;
+	padding-left: 100px;
+	line-height: 40px;
+}
+.my-check-input .label-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+	color: #666;
+}
+.my-check-input .label {
+	position: relative;
+	display: inline-block;
+}
+.my-check-input .input-box {
+	position: relative;
+	height: 40px;
+}
+.my-check-input .input-box::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.my-check-input .input-box .tip {
+	display: none;
+	position: absolute;
+	bottom: -20px;
+	line-height: 20px;
+	left: 0;
+	color: #f56c6c;
+	font-size: 12px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.my-check-input .input-box input {
+	float: left;
+	margin-top: 4px;
+	padding: 0 10px;
+	width: 100%;
+	height: 32px;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+	line-height: 30px;
+}
+.my-check-input .input-box input:hover {
+	border-color: #bbb;
+}
+
+
+/*必填*/
+.my-check-input.is-require .label::before {
+	content: '*';
+	position: absolute;
+	height: 20px;
+	left: -10px;
+	top: 3px;
+	color: red;
+}

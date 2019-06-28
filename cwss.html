@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>荣昌监管系统</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./static/lib/lulu-ui/ui/LightTip.css">
+	<link rel="stylesheet" type="text/css" href="./static/utils/my-check-input/my-check-input.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/fullIn.css">
+</head>
+<body>
+
+	<div id="tmpHeader" class="tmp-header"></div>
+
+	<div id="tmpNav" class="tmp-nav is-shrink"></div>
+
+	<div class="tmp-main">
+		<div class="container fullIn-box">
+			<div class="header clear">
+				<a class="home-btn" href="#">返回集成页</a>
+				<p>当前机构：<span class="now-organ"></span></p>
+			</div>
+
+			<div class="form-box">
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">数据日期</div>
+							</div>
+							<select id="year"></select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医药技术方法（种）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyyjsff">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医诊疗设备（种）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyzlsb">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医药适宜技术（项）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyysyjs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中药饮片（种）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zyyp">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中成药（种）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zcy">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">能中会西的乡村医生（人）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="nzhxdxcys">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">处方总数（张）</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="cfzs">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医处方</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zycf">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中医处方数占处方总数比例</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="zycfszcfzsbl">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">65岁以上老年人总数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="lnrzs65sys">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">65岁以上老年人中医体质辨识人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="lnrzytzbsrs65sys">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">0-36月儿童总人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="etzrs036y">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">0-36月儿童中医调养服务总人数</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt" id="etzytyfwzrs036y">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-box">
+					<button id="clear">取消</button>
+					<button class="submit" id="submit">提交</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		
+	<script data-main="./static/js/config" data-page="cwss" src="./static/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*重置样式*/
+.rc-check-box {
+	padding-left: 0;
+	height: 60px;
+}
+
+
+.login-box.min-wrapper {
+	height: 100vh;
+}
+
+.login-box > .min-scroll {
+	min-height: 100%;
+	position: relative;
+	padding-top: 100px;
+}
+
+
+.login-box .content {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	height: 500px;
+}
+.login-box .content .logo-box {
+	float: left;
+	padding-top: 100px;
+}
+.login-box .content .logo-box .logo {
+	display: block;
+	margin: 0 auto;
+	width: 125px;
+	height: 96px;
+}
+.login-box .content .logo-box .p1 {
+	margin-top: 30px;
+	line-height: 40px;
+	font-size: 26px;
+    color: #08A391;
+}
+.login-box .content .logo-box .p2 {
+	font-size: 13px;
+    color: #08A391;
+}
+
+
+/*登录框*/
+.login-box .content .login-main-box {
+	float: right;
+	width: 350px;
+	height: 450px;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+.login-box .content .login-main-box .title {
+	margin: 50px 0 40px;
+	font-size: 30px;
+	text-align: center;
+
+}
+.login-main-box .box {
+	padding: 0 20px;
+}
+.login-main-box .row1 {
+	padding-top: 30px;
+}
+.login-main-box .row1 label {
+	position: relative;
+	padding-left: 18px;
+}
+.login-main-box .row1 label input {
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+.login-main-box .input-box .code-ipt {
+	width: 200px;
+}
+.login-main-box .input-box .yzm-img {
+	margin-top: 4px;
+	width: 90px;
+	height: 32px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.login-main-box .row2 {
+	padding-top: 15px;
+}
+.login-main-box .submit-btn {
+	background: #3c8dbc;
+	border: none;
+	height: 36px;
+	width: 100%;
+	color: #fff;
+}
+
+
+/*footer*/
+.login-footer {
+	padding: 40px 0 20px;
+}
+.login-footer .jump {
+    background: rgba(255, 255, 255, .3);
+    height: 35px;
+    text-align: center;
+    padding-top: 7px;
+}
+.login-footer .jump a {
+    display: inline-block;
+    padding: 0 30px;
+    color: #333;
+    line-height: 21px;
+}
+.login-footer .jump a:hover {
+	text-decoration: underline;
+}
+.login-footer .record {
+	font-size: 13px;
+    text-align: center;
+}
+
+

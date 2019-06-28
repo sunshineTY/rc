@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>荣昌监管系统</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="./static/lib/lulu-ui/ui/LightTip.css">
+	<link rel="stylesheet" type="text/css" href="./static/utils/my-check-input/my-check-input.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/fullIn.css">
+</head>
+<body>
+
+	<div id="tmpHeader" class="tmp-header"></div>
+
+	<div id="tmpNav" class="tmp-nav is-shrink"></div>
+
+	<div class="tmp-main">
+		<div class="container fullIn-box">
+			<div class="header clear">
+				<a class="home-btn" href="#">返回集成页</a>
+				<p>当前机构：<span class="now-organ"></span></p>
+			</div>
+
+			<div class="form-box">
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">数据年</div>
+							</div>
+							<select id="year"></select>
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">数据月</div>
+							</div>
+							<select id="month"></select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">线下药品采购金额</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt total-je-ipt" id="xxypcgje">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">基本药品采购金额</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt je-ipt" id="jbywcgje">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">中药饮片采购金额</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt je-ipt" id="zyypcgje">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col">
+						<div class="ipt-box is-require">
+							<div class="label-box">
+								<div class="label">免煎药品采购金额</div>
+							</div>
+							<div class="input-box">
+								<p class="tip"></p>
+								<input type="text" class="full-in-ipt je-ipt" id="mjcycgje">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="btn-box">
+					<button id="clear">取消</button>
+					<button class="submit" id="submit">提交</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		
+	<script data-main="./static/js/config" data-page="ypcg" src="./static/lib/require.js"></script>
+</body>
+</html>

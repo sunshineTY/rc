@@ -1,0 +1,140 @@
+
+.container {
+	padding: 30px;
+	min-width: 1060px;
+}
+
+.header {
+	margin-bottom: 30px;
+}
+.header > * {
+	float: left;
+}
+.header a {
+	margin-right: 20px;
+}
+
+
+.form-box {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.row .col {
+	float: left;
+	width: 50%;
+}
+
+.ipt-box {
+	position: relative;
+	padding-left: 240px;
+	height: 40px;
+	line-height: 40px;
+	transition: margin-bottom .3s;
+	-moz-transition: margin-bottom .3s; /* Firefox 4 */
+	-webkit-transition: margin-bottom .3s; /* Safari 和 Chrome */
+	-o-transition: margin-bottom .3s; /* Opera */
+}
+.ipt-box.is-require .label:before {
+	content: '*';
+	position: absolute;
+	height: 100%;
+	left: -10px;
+	top: 0;
+	color: red;
+}
+.ipt-box .label-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	padding-right: 10px;
+	width: 240px;
+	height: 100%;
+	text-align: right;
+	color: #666;
+}
+.ipt-box .label-box .label {
+	position: relative;
+	display: inline-block;
+}
+
+.ipt-box .input-box {
+	position: relative;
+	height: 100%;
+}
+.ipt-box .input-box .tip {
+	display: none;
+	position: absolute;
+	bottom: -20px;
+	line-height: 20px;
+	left: 0;
+	color: #f56c6c;
+	font-size: 12px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ipt-box input, .ipt-box select {
+	padding: 0 10px;
+	width: 100%;
+	height: 32px;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+}
+.ipt-box input:hover {
+	border-color: #bbb;
+}
+
+.ipt-box.is-error {
+	margin-bottom: 20px;
+}
+.ipt-box.is-error input {
+	border-color: #f56c6c;
+}
+.ipt-box.is-error .input-box .tip {
+	display: block;
+}
+
+.btn-box {
+	padding-top: 50px;
+	text-align: center;
+}
+.fullIn-box button {
+	border: none;
+	background: #999;
+	height: 44px;
+	width: 138px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.fullIn-box button.submit {
+	background: #37c6c0;
+}
+.fullIn-box button:hover {
+	background: #428686;
+}
+.btn-box button+button {
+	margin-left: 30px;
+}
+
+
+
+/*重置lulu-ui样式*/
+.ui-lightip {
+	height: auto;
+}
+
+
+
+
+
+
